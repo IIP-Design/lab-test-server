@@ -1,0 +1,21 @@
+{
+  "name": "@gpa-lab/lab-test-server",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "U.S. Department of State, Bureau of Global Public Affairs Digital Lab <gpa-lab@america.gov>",
+  "description": "A node server for testing",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon server.js",
+    "send-mail": "node services/aws/ses.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.960.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
